@@ -9,7 +9,7 @@
 
 <p>
   <strong>賃料:</strong>
-  <%= @property.rent %>
+  <%= converting_to_jpy(@property.rent) %>
 </p>
 
 <p>
@@ -19,7 +19,7 @@
 
 <p>
   <strong>築年数:</strong>
-  <%= @property.age %>
+  <%= @property.age %>年
 </p>
 
 <p>
@@ -44,7 +44,7 @@
   </p>
   <p>
     <strong>徒歩分数:</strong>
-    <%= nearest_station.time %>
+    <%= nearest_station.time %>分
   </p>
   <br>
 <% end %>

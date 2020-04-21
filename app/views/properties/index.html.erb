@@ -18,7 +18,7 @@
     <% @properties.each do |property| %>
       <tr>
         <td><%= property.name %></td>
-        <td><%= property.rent %>円</td>
+        <td><%= converting_to_jpy(property.rent) %></td>
         <td><%= property.address %></td>
         <td><%= property.age %>年</td>
         <td><%= property.remarks %></td>
